@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Andrea & George</title>
+    <link rel="icon" href="./assets/icons/heart_on.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+    <link rel="stylesheet" href="./styles/overlay.css">
+    <script src="./script.js"></script>
+    <script src="./scripts/template.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <a href="https://anonym.to/?https://bit.ly/3Nqlbti">Anonym zu https://bit.ly/3Nqlbti</a>
+    <script src="https://anonym.to/anonym/anonymize.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    protected_links = "";
+    auto_anonymize();
+    </script>    
+
+</head>
+
+<body onload="includeHTML(); render();">
+    <div w3-include-html="./shared/header/header.html"></div>
+
+    <div class="aot">
+        <section class="main_container">
+            <div class="main_container_box">
+                <span>NUESTRA BODA</span>
+                <h1>ANDREA & GEORGE</h1>
+                <img class="ornament" src="./assets/icons/ornament1.png" alt="separador">
+                <span class="italic">"Te amo no solo por lo que eres, sino por lo que soy cuando estoy contigo. Te amo no solo por lo que has hecho de ti mismo, sino por lo que estás haciendo de mí."</span>
+                <span>Roy Croft</span>
+                <a class="btn_date" href="donations.html">
+                    <span>11 Enero 2025</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <section class="countdown">
+        <div class="countdown_box">
+            <h1>¡NOS CASAMOS!</h1>
+            <img class="ornament grey_img" src="./assets/icons/ornament1.png" alt="separador">
+            <span class="italic grey">Los invitamos a ser cómplices de nuestra historia de amor y a escribir juntos un capítulo inolvidable en el día de nuestra boda.</span>
+    
+            <div class="countdown_app">
+                <div class="countdown_app_box">
+                    <div class="countdown_app_box_wrapper">
+                        <div class="element_countdown_item">
+                            <span class="element_dountdown_days"></span>
+                            <span class="element_dountdown_label">DÍAS</span>
+                        </div>
+                        <div class="element_countdown_item">
+                            <span class="element_dountdown_hours"></span>
+                            <span class="element_dountdown_label">HORAS</span>
+                        </div>
+                        <div class="element_countdown_item">
+                            <span class="element_dountdown_minutes"></span>
+                            <span class="element_dountdown_label">MINUTOS</span>
+                        </div>
+                        <div class="element_countdown_item">
+                            <span class="element_dountdown_seconds"></span>
+                            <span class="element_dountdown_label">SEGUNDOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="photoalbum">
+        <div class="photoalbum_box">
+            <h1>NUESTRA HISTORIA</h1>
+            <img class="ornament grey_img" src="./assets/icons/ornament1.png" alt="separador">
+        </div>
+
+        <!--Bildergalerie Außen-->
+        <main>
+            <div id="content" class="content_box"></div>
+        </main>
+    </section>
+
+    <!--OVerlay Section-->
+    <section id="overlay" class="overlay_class">
+        <div class="dialog">
+            <div class="header_dialog">
+                <div id="dialogImageName" class="dialog_image_name"></div>
+                <img onclick="closeDialog()" class="close_dialog" src="./assets/icons/close.png" alt="Cerrar">
+            </div>
+
+            <div class="main_dialog">
+                <img id="dialogImg" class="img_body_dialog" alt="Imagen dialogo">
+            </div>
+
+            <div class="footer_dialog">
+                <img onclick="prevImage()" class="footer_arrow" src="./assets/icons/arrow_left.png" alt="Flecha izquierda">
+                <span id="imageIndex" class="image_index"></span>
+                <img onclick="nextImage()" class="footer_arrow" src="./assets/icons/arrow_right.png" alt="Flecha derecha">
+            </div>
+        </div>
+    </section>
+
+    <section class="deep_message">
+        <div class="deep_message_box">
+            <img class="deep_message_box_quotation" src="./assets/icons/quotation.png" alt="quotation">
+            <span>1 Corintios 13:7: "El amor todo lo sufre, todo lo cree, todo lo espera, todo lo soporta." En los momentos de alegría y en los desafíos, este amor nunca fallará, guiándonos a vivir una vida juntos basada en fe, esperanza y un amor que trasciende lo humano.</span>
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <span>CEREMONIA Y RECEPCIÓN:</span>
+        <span>Villa Fiorenza, Puembo</span>
+        <span>Dirección: San Felipe y Manuel Burbano</span>
+    </section>
+
+    <section>
+        <iframe class="googlemaps" 
+            class="googlemaps" 
+            style="border:0; width:100%; height:650px;" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15903.695064143867!2d-78.3658257!3d-0.1890037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d593051fef2b51%3A0x690048bf20014096!2sVilla%20Fiorenza!5e0!3m2!1sen!2sec!4v1691584571627!5m2!1sen!2sec" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+
+    <div w3-include-html="./shared/footer/footer.html"></div>
+
+</body>
+</html>

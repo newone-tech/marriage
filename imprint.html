@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso legal</title>
+    <link rel="icon" href="./assets/icons/heart_on.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+    <link rel="stylesheet" href="./styles/overlay.css">
+    <!-- <script src="./script.js"></script> -->
+    <script src="./scripts/template.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="includeHTML()">
+    <div class="bg_timetable"></div>
+        <div w3-include-html="./shared/header/header.html"></div>
+        <div class="text_position">
+            <h1>Imprint</h1>
+            <p>Information according to § 5 DDG</p>
+            <br>
+            <p>George Cubas<br/>
+            <br>
+            <h3>Postal address</h3>
+            Kraiburger Strasse 6<br/>
+            84570 Polling<br/>
+            Germany</p>
+
+            <br>
+            <h3>Contact</h3>
+            <p>Phone: 015566168716<br/>
+            E-Mail: georg.cubas@gmail.com</p>
+        </div>
+
+        <div w3-include-html="./shared/footer/footer.html"></div>
+    </div>
+</body>
+</html>
+
+
+<style>
+    .bg_timetable{
+        position: relative; /* Wichtig für das Pseudo-Element */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center top;
+        height: 100vh;
+        background-color: black;
+        /* background-image: url(./assets/img/bg_menu.jpg); */
+        z-index: 0;
+    }
+
+    .bg_timetable::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        /* background-image: url(./assets/img/bg_menu.jpg); */
+        background-position: center top;
+        background-size: cover;
+        filter: brightness(0.6); /* Filter nur auf das Hintergrundbild anwenden */
+        z-index: -1; /* Hintergrund bleibt hinter dem Text */
+        pointer-events: none; /* Hintergrund nicht anklickbar */
+    }
+
+    .text_position {
+        position: fixed;
+        top: 200px;
+        left: 20px;
+        right: 20px;
+        color: beige;
+    }
+</style>
+
+
+

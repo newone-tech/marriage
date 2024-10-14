@@ -1,0 +1,292 @@
+/* ======================================
+   1. HEADER
+   ====================================== */
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Höherer z-index, um den Header über allem anzuzeigen */
+}
+
+.topnav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding: 10px 30px 30px 30px;
+    z-index: 1; 
+    max-width: 1920px;
+    overflow: hidden;
+
+    background-color: rgba(184, 151, 130, 0.4);
+}
+
+header img{
+    width: 100px; 
+}
+
+.nav-bar a:hover {
+    cursor: pointer;
+    color: #008000;
+}
+
+.nav_dialog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    
+    
+}
+.nav_dialog a:hover{
+    cursor: pointer;
+    color: orange;
+}
+
+
+
+.topnav a.icon {
+    display: none;
+}
+
+.hide_mobile{
+    font-size: 24px;
+    margin-left: 30px;
+}   
+
+
+.call_btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color:#9F0908;
+    padding: 8px;
+    border: solid 2px white;
+    border-radius: 10px;
+}
+.call_btn img{
+    width: 16px;
+    height: 16px;
+}
+
+
+.ornament{
+    height: 40px;
+    filter: invert(1);
+}
+
+.grey_img{
+    filter: grayscale(10%);
+    opacity: 0.4; /* Transparenz für den Effekt */
+}
+
+/* ======================================
+   2. BACKGROUND
+   ====================================== */
+
+.aot{
+    position: relative; /* Wichtig für das Pseudo-Element */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    background-image: url(./assets/img/front1.jpg);
+    z-index: 0;
+}
+
+.aot::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img/Conejos.jpg);
+    background-position: center top;
+    background-size: cover;
+    filter: brightness(0.6); /* Filter nur auf das Hintergrundbild anwenden */
+    z-index: -1; /* Hintergrund bleibt hinter dem Text */
+    pointer-events: none; /* Hintergrund nicht anklickbar */
+}
+
+.main_container{
+    position: relative;
+    margin-top: 200px;
+    /* padding: 150px 20px 0 20px; */
+
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.main_container_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.btn_date{
+    margin: 20px;
+    background-color: #A78556;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: #A78556;
+    border-radius: 0px 0px 0px 0px;
+    padding: 20px 70px 20px 70px;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+}
+
+/* ======================================
+   3. COUNTDOWN
+   ====================================== */
+
+.countdown{
+    padding: 20px 0 50px 0;
+}
+
+.countdown_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.countdown_app_box_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.element_countdown_item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-style: double;
+    border-width: 4px 4px 4px 4px;
+    border-color: rgba(167, 133, 86, 0.18);
+}
+
+/* ======================================
+   4. PHOTOALBUM
+   ====================================== */
+
+.photoalbum{
+    padding: 20px 0 50px 0;
+}
+
+.photoalbum_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px; 
+}
+
+.content_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main_solo_img{
+    height: 262px;
+    max-width: 350px;
+    object-fit: cover;
+    border-style: solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* ======================================
+   5. Deep Message
+   ====================================== */
+
+.deep_message{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px 100px 20px;
+    background-color: #211506;
+    opacity: 0.7;
+    transition: 0.3s, border-radius 0.3s, opacity 0.3s;
+    z-index: -1;
+}
+
+.deep_message_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px;
+    gap: 30px;
+
+    color: white;
+    font-size: 38px;
+    font-family: 'Cormorant-italic';
+}
+
+.deep_message_box_quotation{
+    height: 60px;
+    width: 80px;
+    filter: invert(1); /* Bild weiß färben, da Farbe von Schwarz zu weiß geändert wird */
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    text-align: center;
+
+    font-size: 48px;
+    font-family: 'Cormorant-700';
+}
+
+/* ======================================
+   6. Footer
+   ====================================== */
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    background-color: rgb(184, 151, 130);
+}
+
+footer .footer_img img{
+    width: 100px; 
+ }
+
+footer .footer_text a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+}
+footer .footer_text a:hover {
+    color: orange;
+}

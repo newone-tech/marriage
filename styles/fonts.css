@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf');
+    font-weight: 100 900;  /* Gibt den Bereich der verfügbaren Gewichte an */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant-400';
+    src: url('../assets/fonts/Cormorant/CormorantGaramond-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant-700';
+    src: url('../assets/fonts/Cormorant/CormorantGaramond-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant-italic';
+    src:url(../assets/fonts/Cormorant/CormorantGaramond-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cormorant-light-italic';
+    src:url(../assets/fonts/Cormorant/CormorantGaramond-LightItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+/* ======================================
+   2. Design einzelner FONTS hier
+   ====================================== */
+
+.menu_box{
+    font-family: 'Raleway';
+    font-weight: 600; 
+}
+
+.main_container_box h1{
+    font-size: 80px;
+    letter-spacing: 9px;
+    font-family: 'Cormorant-light-italic';
+}
+
+.nav_bar a{
+    color: white;
+    text-decoration: none;
+}
+
+.call_btn{
+    font-size: 24px;
+}
+
+.italic{
+    font-family: 'Cormorant-italic';
+    font-size: 34px;
+   }
+
+.grey{
+    color: #9B9B9B;
+}
+
+.countdown_box h1{
+    font-size: 40px;
+}
+
+.element_dountdown_days, .element_dountdown_hours, .element_dountdown_minutes, .element_dountdown_seconds{
+    font-size: 44px;
+}
+
+.photoalbum_box h1{
+    font-size: 40px;
+}
+
+.image_index{
+    font-family: 'Cormorant-700';
+    font-size: 34px;
+    color: white;
+}
+
+.text_creator{
+    font-size: 20px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" href="./assets/icons/heart_on.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+    <link rel="stylesheet" href="./styles/overlay.css">
+    <script src="./scripts/template.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="includeHTML()">
+    <div class="bg_timetable">
+        <div w3-include-html="./shared/header/header.html"></div>
+
+        <div class="text_position">
+            <h1>Menu - EJEMPLO BORRADOR</h1>
+            <table class="timetable_box">
+                <tr>
+                    <th>Categoría</th>
+                    <th>Plato</th>
+                </tr>
+                <tr>
+                    <td>Entrada</td>
+                    <td>Ensalada de mariscos</td>
+                </tr>
+                <tr>
+                    <td>Sorbet</td>
+                    <td>Sorbet de limón</td>
+                </tr>
+                <tr>
+                    <td>Plato fuerte</td>
+                    <td>Solomillo de ternera con verduras</td>
+                </tr>
+                <tr>
+                    <td>Dúo de postres</td>
+                    <td>Cheesecake con mousse de chocolate</td>
+                </tr>
+                <tr>
+                    <td>Tentempié</td>
+                    <td>Locro de papas</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div w3-include-html="./shared/footer/footer.html"></div>
+</body>
+</html>
+
+<style>
+    .bg_timetable{
+        position: relative; /* Wichtig für das Pseudo-Element */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center top;
+        height: 100vh;
+        background-image: url(./assets/img/bg_menu.jpg);
+        z-index: 0;
+    }
+
+    .bg_timetable::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/img/bg_menu.jpg);
+        background-position: center top;
+        background-size: cover;
+        filter: brightness(0.6); /* Filter nur auf das Hintergrundbild anwenden */
+        z-index: -1; /* Hintergrund bleibt hinter dem Text */
+        pointer-events: none; /* Hintergrund nicht anklickbar */
+    }
+
+    .text_position {
+        display: flex;
+        flex-direction: column;
+        top: 200px;
+        left: 20px;
+        right: 20px;
+        margin-top: 180px; /* Abstand zum Header */
+        color: beige;
+    }
+
+    table.timetable_box {
+        border-collapse: collapse;
+        width: 100%; /* Optional: Breite der Tabelle anpassen */
+        margin-top: 20px;
+    }
+
+    .timetable_box th,
+    .timetable_box td {
+        border: 1px solid beige;
+        padding: 10px;
+        text-align: left;
+        color: beige;
+    }
+
+    .timetable_box th {
+        background-color: rgba(255, 255, 255, 0.2); /* Optional: leicht transparenter Hintergrund für Überschriften */
+        font-size: 18px;
+    }
+
+    .timetable_box td {
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 16px;
+    }
+</style>

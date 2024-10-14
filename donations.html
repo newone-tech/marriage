@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalos</title>
+    <link rel="icon" href="./assets/icons/heart_on.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+    <link rel="stylesheet" href="./styles/overlay.css">
+    <!-- <script src="./script.js"></script> -->
+    <script src="./scripts/template.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="includeHTML()">
+    <div class="aot">    
+        <div w3-include-html="./shared/header/header.html"></div>
+
+        <section class="donation_box">
+            <h1>Gracias por ser parte de nuestro gran día</h1>
+            <span>Estamos muy emocionados por compartir este momento especial con ustedes. Queremos expresarles nuestra gratitud por compartir con nosotros este momento tan especial.</span>
+            <span>Si desean hacernos un obsequio, hemos habilitado una cuenta de ahorros y una cuenta de PayPal para recibir sus aportaciones de manera electrónica. Les agradecemos de todo corazón por su generosidad, y aseguramos que cualquier contribución será recibida con inmensa gratitud.</span>
+            <div class="account_info">
+                <div>
+                    <p>Banco:</p>
+                    <p>Nro. de cuenta:&nbsp;&nbsp;</p>
+                    <p>Tipo de cuenta:&nbsp;</p>
+                    <p>Titular cuenta:</p>
+                    <p>E-Mail:</p>
+                </div>
+                <div>
+                    <p>Pichincha</p>
+                    <p>2200058944</p>
+                    <p>Ahorros</p>
+                    <p>Laura Palacios</p>
+                    <p>lapa_pin8_andrea@hotmail.com</p>
+                </div>
+            </div>
+            <span>Con mucho cariño,</span>    
+            <span>Andrea y George</span>    
+        </section>
+    </div>
+
+    <div w3-include-html="./shared/footer/footer.html"></div>
+</body>
+</html>
+
+
+<style>
+    .aot {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center top;
+        height: 100vh;
+        background-image: url(./assets/img/front1.jpg);
+        z-index: 0;
+    }
+    
+    
+    header{
+        /* position: absolute; */
+        width: 100%; /* Damit der Header die volle Breite einnimmt */
+    }
+    
+    .donation_box{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 180px; /* Abstand zum Header */
+    }
+
+    .account_info{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        
+    }
+
+    .account_info p{
+        font-weight: 700;
+    }
+
+    h1 {
+        color: #d97d7d;
+        font-size: 70px;
+    }
+    p {
+        font-size: 30px;
+        color: white;
+    }
+
+    span{
+        font-size: 30px;
+        color: white;
+    }
+</style>
