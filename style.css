@@ -2,7 +2,7 @@
    1. HEADER
    ====================================== */
 
-header{
+   header{
     display: flex;
     position: fixed;
     top: 0;
@@ -19,11 +19,10 @@ header{
     height: 150px;
     width: 100%;
     padding: 10px 30px 30px 30px;
-    z-index: 1; 
+    z-index: 1;
     max-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
-
     background-color: rgba(184, 151, 130, 0.4);
 }
 
@@ -269,7 +268,7 @@ header img{
     padding: 40px 0 40px 0;
     text-align: center;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: auto;
 
     font-size: 48px;
     font-family: 'Cormorant-700';
