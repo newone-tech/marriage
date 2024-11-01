@@ -21,6 +21,7 @@ header{
     padding: 10px 30px 30px 30px;
     z-index: 1; 
     max-width: 1920px;
+    margin: 0 auto;
     overflow: hidden;
 
     background-color: rgba(184, 151, 130, 0.4);
@@ -101,6 +102,8 @@ header img{
     height: 100vh;
     background-image: url(./assets/img/front1.jpg);
     z-index: 0;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .aot::before {
@@ -161,6 +164,8 @@ header img{
 
 .countdown{
     padding: 20px 0 50px 0;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .countdown_box{
@@ -195,6 +200,8 @@ header img{
 
 .photoalbum{
     padding: 20px 0 50px 0;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .photoalbum_box{
@@ -233,6 +240,8 @@ header img{
     opacity: 0.7;
     transition: 0.3s, border-radius 0.3s, opacity 0.3s;
     z-index: -1;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .deep_message_box{
@@ -259,10 +268,19 @@ header img{
     align-items: center;
     padding: 40px 0 40px 0;
     text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
 
     font-size: 48px;
     font-family: 'Cormorant-700';
 }
+
+.googlemaps{
+    display: block;
+    max-width: 1920px; 
+    margin: 0 auto;
+}
+
 
 /* ======================================
    6. Footer
@@ -274,6 +292,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
 
     background-color: rgb(184, 151, 130);
 }

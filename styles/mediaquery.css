@@ -96,10 +96,10 @@
         font-size: 15px;
     }
 
-    .gift_box h1{
+    .donation_box h1{
         font-size: 50px;
     }
-    .gift_box span, .gift_box p{
+    .donation_box span, .donation_box p{
         font-size: 20px;
     }
     
@@ -115,7 +115,7 @@
 
 
 
-@media (max-width: 430px){
+@media(max-width:393px){
     main {
         display: flex;
         justify-content: center;
@@ -181,11 +181,11 @@
         display: none;
     }
 
-    .gift_box h1{
+    .donation_box h1{
         font-size: 30px;
     }
-    .gift_box span, .gift_box p{
-        font-size: 12px;
+    .donation_box span, .donation_box p{
+        font-size: 15px;
     }
 
     .btn_date {
@@ -209,31 +209,5 @@
 
     footer .footer_text p{
         font-size: 15px;
-    }
-
-    .text_position h1{
-        font-size: 30px;
-    }
-    .text_position span {
-        font-size: 17px;
-    }
-
-    .account_info {
-        flex-direction: column; /* Ändert die Flexbox-Richtung zu vertikal */
-        align-items: flex-start; /* Text linksbündig anordnen */
-        text-align: left; /* Sicherstellen, dass der Text korrekt ausgerichtet ist */
-    }
-    .account_info div {
-        width: 100%; /* Stellt sicher, dass beide Spalten die volle Breite einnehmen */
-    }
-    .account_info p {
-        margin: 0 0 10px 0; /* Fügt einen kleinen Abstand zwischen den Textabschnitten hinzu */
-    }
-
-    .account_info th {
-        font-size: 14px;
-    }
-    .account_info td {
-        font-size: 14px;
     }
 }

@@ -57,7 +57,7 @@
 .main_dialog{
     display: flex;
     justify-content: center;
-    height: 700px;
+    height: 500px;
 
     background-color: rgb(189, 148, 117); 
 }
