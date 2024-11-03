@@ -30,7 +30,7 @@
         position: absolute;
         display: flex; 
         justify-content: center;
-        top: 30px;
+        top: 10px;
         right: 100px;
         padding: 0px;
         background-color: rgb(170, 76, 21);
@@ -38,7 +38,7 @@
 
     .nav_dialog a.hide_mobile{
         /* display: block; */
-        padding: 3px 0;
+        padding: 2px 0;
         font-size: 15px;
         font-family: 'raleway';
         
