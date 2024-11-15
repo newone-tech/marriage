@@ -13,7 +13,6 @@ let myImgs = [
     "./assets/img/Manabi_5.jpg",
     "./assets/img/Manabi_6.jpg",
     "./assets/img/Mindo_1.jpg",
-    "./assets/img/Mindo_2.jpg",
     "./assets/img/Primer_desayuno.jpeg",
     "./assets/img/Compromiso.jpg",
     "./assets/img/Vangoh_1.jpg",
